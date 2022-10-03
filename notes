@@ -1,0 +1,86 @@
+# This is a sample Python script.
+
+# Press ⌃R to execute it or replace it with your code.
+# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+
+print("hello world")
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+print("Hello, World!")
+print("Hello, World!")
+
+if 5 > 2:
+    print("five is greater than 2")
+
+x = 5
+x = "ALDEN"  # now a string
+x = str(3)  # specifying that it should be a string of 3
+x = int(3)
+y = "hello"
+print(y)
+# this is a comment
+print(type(x))  # will print the type
+# strings can be created using '' or ""
+
+"""
+this is a multiline string
+"""
+# variable names are case-sensitive, a and A are different
+# variable name must start with a letter or underscore
+
+x, y, z = "Orange", "Banana", "Cherry"  # you can create multiple variables in one line
+x = y = z = "Orange"  # or the same value to multiple variables
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits  # this is setting one value to each variable listed
+print(x)
+print(y)
+print(z)
+print(x, y, z)
+print(x + y + z)  # both above and this are acceptable for printing multiple variables
+# + in a print statement with numbers adds them
+# to print different variable types, like string and int, separate them with commas
+# global variables are created outside a function and can be used inside, local variables are created inside a
+# function and can only be used inside --> you can also create global variables inside a function by writing global
+# example --> global x
+# x = "fantastic"
+# you also must use the global keyword if you want to change the global variable inside the function
+x = 5  # int
+x = 1j  # complex
+x = 2.8  # float
+# floats contain decimals, and they can also include an e to set the number that follows as the power of ten
+x = 2e4
+# complex number use j as the imaginary part, ex --> 4 + 3j = 4 + 3i
+# you can convert types, ex. x = float(y)
+
+import random
+
+print(random.randrange(1, 10))
+# for random numbers ^ , range is from 1 to 10
+
+y = int(2.8)  # y will be set to 2
+z = float(2)  # z will be set to 2.0
+a = """ hello how are you
+are you doing well
+my name is Alden """  # a multiline string, created by doing """ or '''
+a = "hello world"
+print(a[1])  # will print e
+for x in "banana":  # looping through string banana and printing x
+    print(x)
+# len() returns the length of a string --> for example, len(a)
+
+txt = "The best things in life are free!"
+print("free" in txt)
+# ^ this checks if free is in the text and prints true or false
+if "free" in txt:
+    print("Yes, 'free' is present.")  # prints line only if free is in the text
+print("expensive" not in txt)  # prints true if it is not in the text
+if "expensive" not in txt:
+    print("No, 'expensive' is NOT present.")
+
+b = "Hello, World!"
+print(b[2:5])
+# prints a range of the string, from character 2 to 5 (5 not included)
+
+
+
+
