@@ -8,3 +8,5 @@ def getPlayer1(self):
 
 def getPlayer2(self):
     return self.p2
+
+# changes
