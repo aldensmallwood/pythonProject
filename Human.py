@@ -1,3 +1,5 @@
 
-class Human(Player)
-    def __init__(self, name, name2):
+class Human(Player):
+    def __init__(self, name):
+        super(name)
+
