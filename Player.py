@@ -3,7 +3,7 @@ class Player:
 
 def __init__(self, name, num):
     self.p1 = name
-    self.oneOrTwo = num
+    self.oneOrTwo = num  # for player number
 
 
 def getName(self):
