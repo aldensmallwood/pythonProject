@@ -3,6 +3,7 @@ def __init__(self, name):
     self.p1 = name
 
 
-def getname(self):
+def getName(self):
     return self.p1
+
 
