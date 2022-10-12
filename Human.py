@@ -1,8 +1,11 @@
 from Player import Player
 
+
 class Human(Player):
-    def __init__(self, name):
-        super(name)
+
+    def __init__(self, name, num):
+        super(name, num)
+
 
 
     def pickPocket(self, pocket):
