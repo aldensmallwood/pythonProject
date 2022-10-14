@@ -6,7 +6,7 @@ class Human(Player):
     def __init__(self, name, num):
         super(name, num)
 
-    def pickPocket(self, pocket):
+    def pickPocket(self):
         pocket = int(input("Enter the pocket you want to play: "))
         return pocket
 
