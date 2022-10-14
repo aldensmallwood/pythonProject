@@ -12,14 +12,15 @@ class Gameboard:
         pockStart = p1.pickPocket()
         seeds = self.board[pockStart]
         self.board[pockStart] = 0
-        currentPock = pockStart
-        for x in seeds:
+        currentPock = pockStart+1
+        print("seeds=",seeds)
+        for x in range(seeds):
             if (currentPock == 0 and ot == 1) or (currentPock == 7 and ot == 2):
                 self.board[currentPock] = self.board[currentPock] + 1
                 currentPock = currentPock + 1
             elif (currentPock == 0 and ot == 2) or (currentPock == 7 and ot == 1):
                 currentPock = currentPock + 1
-                x = x + 1
+                x = x-1
             elif currentPock == 13:
                 self.board[currentPock] = self.board[currentPock] + 1
                 currentPock = 0
