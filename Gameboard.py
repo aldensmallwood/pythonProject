@@ -12,8 +12,19 @@ class Gameboard:
         currentPock = pockStart
         seeds = self.board[pockStart]
         for x in seeds:
-             #  if we are in one of the mancalas, either add one or skip over it
-             #  if we are at the end of the mancala board, go back to 0 if that is their mancala, or one if it is not theirs
+            if (self.board[currentPock] == 0 and oneOrTwo == 1) or (self.board[currentPock] == 7 and oneOrTwo == 2):
+                self.board[currentPock] = self.board[currentPock] + 1
+            elif (self.board[currentPock] == 0 and oneOrtwo == 2) or (self.board[currentPock] == 7 and oneOrtwo == 1):
+                currentPock = currentPock + 1
+            elif (self.board[currentPock] == 13):
+                self.board[currentPock] = self.board[currentPock] + 1
+                currentPock = 0
+            else:
+                self.board[currentPock] = self.board[currentPock] + 1
+                currentPock = currentPock + 1
+
+            # also need a variable for the last pocket added 
+
 
 
 
