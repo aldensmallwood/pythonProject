@@ -6,4 +6,3 @@ g1 = Gameboard()
 print(g1.displayBoard())
 g1.onePlay(p1, 1)
 print(g1.displayBoard())
-
