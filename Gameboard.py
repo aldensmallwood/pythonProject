@@ -1,4 +1,3 @@
-from Player import Player
 
 
 # noinspection PyPep8Naming
