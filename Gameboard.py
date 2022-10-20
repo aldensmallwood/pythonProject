@@ -8,6 +8,9 @@ class Gameboard:
         self.board = [0, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4]
         self.currentPock = 0
 
+    def getBoard(self):
+        return self.board
+
     def onePlay(self, p1, oneOrTwo):
         ot = oneOrTwo
         if self.currentPock == 0 or self.currentPock == 7:
